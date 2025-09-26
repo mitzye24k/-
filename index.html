@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu កាហ្វេផ្ទះអ៊ំ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>កាហ្វេផ្ទះអ៊ំ</h1>
+      <p>Tel:069801841 / 069801841</p>
+    </header>
+
+    <div class="menu-container">
+      <h2>Menu ភេសជ្ជៈនិងកាហ្វេ</h2>
+
+      <div class="menu-section">
+        <h3>១. កាហ្វេ (Coffee)</h3>
+
+        <div class="menu-item">
+          <img src="./images.jfif" alt="រូបភាព Americano" />
+          <div class="item-details">
+            <span class="item-name">Americano (ក្តៅ/ត្រជាក់)</span>
+            <span class="item-description"
+              >កាហ្វេ Espress ជាមួយនឹងទឹកសុទ្ធ។ ស្រាល តែខ្លាំងក្លា។</span
+            >
+            <button class="toggle-btn" data-target="detail-americano">
+              ព័ត៌មានលម្អិត...
+            </button>
+            <div id="detail-americano" class="hidden-detail">
+              មានជម្រើស ២ ប្រភេទ៖ Medium Roast (ធម្មតា) ឬ Dark Roast (ខ្លាំង)។
+            </div>
+          </div>
+          <span class="item-price">8,000 រៀល</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="latte.jpg" alt="រូបភាព Latte" />
+          <div class="item-details">
+            <span class="item-name">Latte (ក្តៅ/ត្រជាក់)</span>
+            <span class="item-description"
+              >Espress ផ្សំជាមួយទឹកដោះគោ និង Foam ស្រាល។</span
+            >
+            <button class="toggle-btn" data-target="detail-latte">
+              ព័ត៌មានលម្អិត...
+            </button>
+            <div id="detail-latte" class="hidden-detail">
+              អាចបន្ថែមរសជាតិ Vanilla, Hazelnut ឬ Almond ដោយឥតគិតថ្លៃ។
+            </div>
+          </div>
+          <span class="item-price">10,000 រៀល</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="cappuccino.jpg" alt="រូបភាព Cappuccino" />
+          <div class="item-details">
+            <span class="item-name">Cappuccino</span>
+            <span class="item-description"
+              >ទឹកដោះគោ Foam ក្រាស់ និងរសជាតិកាហ្វេកាន់តែខ្លាំង។</span
+            >
+            <button class="toggle-btn" data-target="detail-cappuccino">
+              ព័ត៌មានលម្អិត...
+            </button>
+            <div id="detail-cappuccino" class="hidden-detail">
+              ល្អបំផុតសម្រាប់អ្នកចូលចិត្តក្លិនកាហ្វេ និង Foam ក្រាស់ៗ។
+            </div>
+          </div>
+          <span class="item-price">10,000 រៀល</span>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h3>២. ភេសជ្ជៈ (Drinks)</h3>
+
+        <div class="menu-item signature">
+          <img src="./download (1).jfif" alt="រូបភាព Coffee Salted Caramel" />
+          <div class="item-details">
+            <span class="item-name">Coffee Salted Caramel</span>
+            <span class="item-description"
+              >ភេសជ្ជៈហត្ថលេខា! រសជាតិអំបិលម៉ាការ៉ែល ផ្អែមប្រៃល្មម។</span
+            >
+            <button class="toggle-btn" data-target="detail-signature">
+              ព័ត៌មានលម្អិត...
+            </button>
+            <div id="detail-signature" class="hidden-detail">
+              ប្រើទឹកដោះគោស្រស់ និង Espress ពិសេសរបស់យើង។
+            </div>
+          </div>
+          <span class="item-price">12,000 រៀល</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="coconut_coffee.jpg" alt="រូបភាព Coconut Coffee" />
+          <div class="item-details">
+            <span class="item-name">Coconut Coffee</span>
+            <span class="item-description"
+              >កាហ្វេខ្មែរផ្សំជាមួយរសជាតិដូងស្រស់។</span
+            >
+            <button class="toggle-btn" data-target="detail-coconut">
+              ព័ត្វមានលម្អិត...
+            </button>
+            <div id="detail-coconut" class="hidden-detail">
+              ល្អបំផុតសម្រាប់ទទួលទានពេលត្រជាក់!
+            </div>
+          </div>
+          <span class="item-price">11,000 រៀល</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="matcha.jpg" alt="រូបភាព Matcha Latte" />
+          <div class="item-details">
+            <span class="item-name">Matcha Latte (Non-Coffee)</span>
+            <span class="item-description"
+              >តែបៃតង Matcha ជប៉ុនគុណភាពខ្ពស់។</span
+            >
+            <button class="toggle-btn" data-target="detail-matcha">
+              ព័ត៌មានលម្អិត...
+            </button>
+            <div id="detail-matcha" class="hidden-detail">
+              អាចជ្រើសរើសទឹកដោះគោ Almond ឬ Oat បាន។
+            </div>
+          </div>
+          <span class="item-price">12,000 រៀល</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 កាហ្វេផ្ទះអ៊ំ | រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+    </footer>
+
+    <div id="image-modal" class="modal">
+      <span class="close-btn">&times;</span>
+      <img class="modal-content" id="modal-image" />
+      <div id="caption" class="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

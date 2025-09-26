@@ -1,0 +1,311 @@
+/* ពណ៌សំខាន់ៗ */
+:root {
+  --primary-blue: #1a1a1a; /* Sky Blue Accent */
+  --text-dark: #333333;
+  --text-light: #f9f9f9;
+  --bg-light-primary: #f9f9f9;
+  --bg-light-secondary: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ការរៀបចំទូទៅ និងពុម្ពអក្សរ */
+body {
+  font-family: "Khmer", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light-primary); /* ពណ៌សស្អាត */
+  color: var(--text-dark); /* ពណ៌អក្សរខ្មៅងងឹត */
+}
+
+/* Header - ក្បាលទំព័រ */
+header {
+  background-color: var(--primary-blue); /* ផ្ទៃខាងក្រោយពណ៌ខៀវ */
+  color: var(--text-light); /* អក្សរពណ៌ស */
+  padding: 60px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.5em;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 900;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.4em;
+  opacity: 0.9;
+}
+
+/* Menu Container */
+.menu-container {
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: var(--bg-light-secondary); /* ផ្ទៃខាងក្រោយ Menu ពណ៌សសុទ្ធ */
+  border-radius: 12px;
+  border: 1px solid #e0e0e0; /* គែមស្តើង */
+  box-shadow: 0 10px 30px var(--shadow-color); /* ស្រមោលស្អាត */
+}
+
+.menu-container h2 {
+  text-align: center;
+  color: var(--primary-blue); /* ពណ៌ខៀវ Accent */
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Menu Section */
+.menu-section {
+  margin-bottom: 50px;
+}
+
+.menu-section h3 {
+  color: var(--text-dark);
+  font-size: 1.8em;
+  border-left: 5px solid var(--primary-blue); /* បន្ទាត់ខៀវ */
+  padding-left: 15px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Menu Item */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #f0f8ff; /* ផ្ទៃខាងក្រោយខៀវស្រាលពេល Hover */
+  transform: translateX(3px); /* រំកិលទៅស្តាំបន្តិច */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* រូបភាព - ទាន់សម័យ */
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px; /* ជ្រុងមូលល្មម */
+  margin-right: 25px;
+  border: 3px solid var(--primary-blue); /* គែមពណ៌ខៀវ */
+  box-shadow: 0 0 10px rgba(0, 174, 239, 0.3); /* ស្រមោលខៀវស្រាល */
+  cursor: pointer; /* ធ្វើឱ្យដឹងថាអាចចុចបាន */
+}
+
+/* ព័ត៌មានលម្អិត (ឈ្មោះ & បរិយាយ) */
+.item-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.item-name {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.item-description {
+  font-style: italic;
+  color: #888888; /* ពណ៌ប្រផេះស្រាល */
+  font-size: 0.95em;
+}
+
+/* តម្លៃ */
+.item-price {
+  font-weight: 900;
+  color: var(--primary-blue);
+  text-align: right;
+  font-size: 1.8em;
+  min-width: 120px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* លក្ខណៈពិសេស Signature */
+.menu-item.signature .item-name {
+  color: #000000; /* Coral Red សម្រាប់ Signature */
+}
+.menu-item.signature .item-price {
+  color: #000000;
+}
+
+/* រចនាបថប៊ូតុង JavaScript */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: var(--primary-blue);
+  cursor: pointer;
+  font-size: 0.95em;
+  margin-top: 10px;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: #aaaaaa;
+  text-align: left;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  color: var(--text-dark);
+  text-decoration-color: var(--primary-blue);
+}
+
+/* រចនាបថព័ត៌មានលាក់ */
+.hidden-detail {
+  display: none;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f0f0f0; /* ផ្ទៃខាងក្រោយស្រាលជាង */
+  border-left: 5px solid var(--primary-blue);
+  font-size: 0.95em;
+  color: var(--text-dark);
+  border-radius: 5px;
+}
+
+.hidden-detail.show {
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #efefef;
+  color: #aaaaaa;
+  font-size: 1em;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ======================================= */
+/* រចនាបថ Modal សម្រាប់រូបភាពចុច (Clickable Image) */
+/* ======================================= */
+
+.modal {
+  display: none; /* លាក់ដោយលំនាំដើម */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* ផ្ទៃខាងក្រោយខ្មៅថ្លា */
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 8px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  border: 3px solid var(--primary-blue);
+}
+
+#caption {
+  margin: 15px auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: var(--text-light); /* ពណ៌សនៅលើផ្ទៃខ្មៅ */
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: var(--primary-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Media Query សម្រាប់អេក្រង់ទូរស័ព្ទ */
+@media (max-width: 650px) {
+  .menu-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .menu-item {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .menu-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .item-details {
+    flex-basis: calc(100% - 100px);
+    margin-left: 10px;
+    order: 1;
+  }
+
+  .item-price {
+    order: 2;
+    flex-basis: 100%;
+    text-align: left;
+    margin-top: 8px;
+    font-size: 1.6em;
+  }
+
+  .item-name {
+    font-size: 1.3em;
+  }
+  .item-description {
+    font-size: 0.9em;
+  }
+  .toggle-btn {
+    font-size: 0.85em;
+    margin-bottom: 5px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 5px;
+  }
+  .close-btn {
+    right: 20px;
+  }
+}
